@@ -206,3 +206,31 @@ console.log(document.body.innerHTML)
 ```
 
 `insertAdjacentHTML` 只有该节点位于 DOM 中，并且有父节点时才有效。
+
+## 提取部分 DOM 树作为字符串
+
+```html
+<div id="A"><i>Hi</i></div>
+<div id="B">Dude<strong> !</strong></div>
+```
+
+```js
+const $ = el => document.querySelector(el)
+
+const $A = $('#A')
+const $B = $('#B')
+
+console.log($A.innerHTML)
+console.log($A.outerHTML)
+
+console.log($B.textContent)
+console.log($B.innerText)
+console.log($B.outerText)
+
+// => 
+<i>Hi</i>
+<div id="A"><i>Hi</i></div>
+Dude !
+Dude !
+Dude !
+```
