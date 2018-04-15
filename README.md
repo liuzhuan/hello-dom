@@ -1,9 +1,11 @@
-# 你好，DOM
+# Hello DOM
 
-DOM(Document Object Model)文档对象模型
+文档对象模型（Document Object Model，DOM）是个由 JavaScript 节点对象组成的层次结构。
 
-DOM 的目的是使用 JavaScript 操作为当前文档提供一个编程接口。
+参见[目录](./src/SUMMARY.md)
 
 ## 参考资料
 
-- http://www.domenlightenment.com/ Cody Lindley
+- [Dom Enlightenment][dom] by *Cody Lindley*
+
+[dom]: http://www.domenlightenment.com/
