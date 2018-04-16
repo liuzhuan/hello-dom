@@ -234,3 +234,30 @@ Dude !
 Dude !
 Dude !
 ```
+
+## 使用 `appendChild()` 与 `insertBefore()` 向 DOM 中插入节点对象
+
+```js
+container.appendChild(el)
+container.insertBefore(el, anchor)
+```
+
+## 使用 `removeChild()` 和 `replaceChild()` 来移除与替换节点
+
+```js
+el.parentNode.removeChild(el)
+```
+
+> `parentNode` 和 `parentElement` 有什么区别？[lonesomeday][node-vs-element] 在 stackoverflow 的一个回答是，`parentElement` 对于 Firefox 9 和 DOM4 是新属性，但是对于其他主流浏览器，已经存在多年了。大多数情况下，`parentElement` 同 `parentNode` 几乎一样。区别在于，当一个节点的 `parentNode` 不是 element 时，`parentElement` 将返回 `null`。
+
+> 比如：
+
+```js
+document.body.parentNode; // the <html> element
+document.body.parentElement; // the <html> element
+
+document.documentElement.parentNode; // the document node
+document.documentElement.parentElement // null
+```
+
+[node-vs-element]: https://stackoverflow.com/questions/8685739/difference-between-dom-parentnode-and-parentelement
