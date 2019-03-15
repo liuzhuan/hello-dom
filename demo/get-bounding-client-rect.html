@@ -11,7 +11,7 @@
         }
 
         div {
-            height: 50px;
+            height: 80px;
             width: 50px;
             background-color: red;
             border: 10px solid gray;
@@ -23,13 +23,18 @@
     <div></div>
 
     <script>
-        var divEdge = document.querySelector('div').getBoundingClientRect();
+        var el = document.querySelector('div');
+        var divEdge = el.getBoundingClientRect();
         console.log(
             divEdge.top,
             divEdge.right,
             divEdge.bottom,
             divEdge.left,
+            divEdge.width,
+            divEdge.height,
         );
+
+        console.log(el.offsetWidth, el.offsetHeight);
     </script>
 </body>
 </html>
