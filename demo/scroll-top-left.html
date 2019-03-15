@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scrollLeft and scrollTop Demo</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+
+        p {
+            width: 1000px;
+            height: 1000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+
+    <script>
+        var el = document.querySelector('div')
+
+        el.scrollTop = 750
+        el.scrollLeft = 750
+
+        console.log(el.scrollTop, el.scrollLeft)
+    </script>
+</body>
+</html>

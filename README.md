@@ -11,6 +11,7 @@
 3. [clientWidth and clientHeight](./demo/client-width-height.html)
 4. [elementFromPoint()](./demo/element-from-point.html)
 5. [scrollWidth & scrollHeight](./demo/scroll-width-height.html)
+6. [scrollTop & scrollLeft](./demo/scroll-top-left.html)
 
 ## 参考资料
 
