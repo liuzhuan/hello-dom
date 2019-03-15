@@ -9,6 +9,7 @@
 1. [offsetLeft, offsetTop and offsetParent](./demo/offset-top-left.html)
 2. [getBoundingClientRect()](./demo/get-bounding-client-rect.html)
 3. [clientWidth and clientHeight](./demo/client-width-height.html)
+4. [elementFromPoint()](./demo/element-from-point.html)
 
 ## 参考资料
 
