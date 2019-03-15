@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clientWidth and clientHeight Demo</title>
+    <style>
+        div {
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border: 25px solid gray;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <script>
+        var el = document.querySelector('div');
+        console.log(
+            el.clientWidth,
+            el.clientHeight,
+        );
+    </script>
+</body>
+</html>
