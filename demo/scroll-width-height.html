@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>scrollWidth and scrollHeight Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            overflow: auto;
+        }
+
+        p {
+            height: 1000px;
+            width: 1000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+
+    <script>
+        var el = document.querySelector('div')
+        console.log(
+            el.scrollWidth,
+            el.scrollHeight,
+        )
+    </script>
+</body>
+</html>
