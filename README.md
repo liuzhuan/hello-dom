@@ -4,6 +4,11 @@
 
 参见[目录](./src/SUMMARY.md)
 
+## 测试页面
+
+1. [offsetLeft, offsetTop and offsetParent](./demo/offset-top-left.html)
+2. [getBoundingClientRect()](./demo/get-bounding-client-rect.html)
+
 ## 参考资料
 
 - [Dom Enlightenment][dom] by *Cody Lindley*
